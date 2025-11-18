@@ -10,6 +10,7 @@ builder.Services.AddRazorComponents()
 // Register services
 builder.Services.AddScoped<LocalStorageService>();
 builder.Services.AddScoped<TimeZoneService>();
+builder.Services.AddHttpClient<WeatherService>();
 
 var app = builder.Build();
 
